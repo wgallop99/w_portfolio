@@ -1,0 +1,41 @@
+/**
+ * Nav Styles
+ */
+
+.main-header {
+ 	display: block;
+ 	border: 1px solid red;
+	padding: 20px 0; 
+
+ 	// Sticky
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+ 	nav {
+ 		display: block;
+ 		float: right;
+ 	}
+
+ 	ul {
+ 		list-style-type: none;
+ 		margin: 0;
+ 		padding: 0;
+
+ 		li {
+ 			display: inline-block;
+ 			padding: 0 20px;
+ 			vertical-align: middle;
+ 		}
+ 	}
+ }
+
+.nav__item--current {
+	background: black;
+
+	a {
+		color: white;
+	}
+}
