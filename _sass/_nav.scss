@@ -1,11 +1,11 @@
 /**
- * Nav Styles
+ * Header and Nav Styles
  */
 
 .main-header {
  	display: block;
- 	border: 1px solid red;
 	padding: 20px 0; 
+	background: white;
 
  	// Sticky
     width: 100%;
@@ -13,6 +13,10 @@
     z-index: 999;
     top: 0;
     left: 0;
+
+    .site-logo {
+    	padding-left: 20px;
+    }
 
  	nav {
  		display: block;
@@ -33,9 +37,40 @@
  }
 
 .nav__item--current {
-	background: black;
 
 	a {
-		color: white;
+		text-decoration: underline;
+	}
+}
+
+// Footer styles
+
+.main-footer {
+	padding: 20px;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.social, .secondary-navbar {
+		display: inline-block;
+	}
+
+	.social {
+		float: right;
+
+		li {
+			padding: 0 10px;
+		}
+
+		a {
+			font-size: 20px;
+		}
 	}
 }
