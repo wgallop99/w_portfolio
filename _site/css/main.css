@@ -132,7 +132,8 @@ pre {
 .row {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 40px 20px; }
+  padding: 40px 20px;
+  overflow: hidden; }
 
 /**
  * Syntax highlighting styles
@@ -505,7 +506,9 @@ th {
 
 .hero-intro {
   height: 100vh;
-  background: red;
+  background: url("../img/mosaic.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative; }
 
 .scroll-arrow {
@@ -580,3 +583,15 @@ th {
 .about p {
   font-size: 20px;
   line-height: 2; }
+
+.skills {
+  background: #0002FF;
+  text-align: center;
+  clear: both; }
+  .skills h2, .skills h3, .skills p {
+    color: white; }
+  .skills .col {
+    vertical-align: top;
+    width: 33.3%;
+    float: left;
+    display: inline-block; }

@@ -4,7 +4,7 @@ console.log("We have js!!!");
 {
     'use strict';
     
-    var header = document.querySelector('.main-header'),
+    var header = document.querySelector('.main-header');
         // elShrink = 'header--shrink',
         // elShrinkOffset = 100,
 

@@ -3,7 +3,9 @@
 
 .hero-intro {
 	height: 100vh;
-	background: red;
+	background: url('../img/mosaic.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 	position: relative;
 }
 
@@ -107,7 +109,6 @@
 ///////////////////////////////////////////////////
 
 
-
 .about {
 
 	p {
@@ -115,3 +116,24 @@
 		line-height: 2;
 	}
 }
+
+
+.skills {
+  background: $brand-color;
+  text-align: center;
+  clear: both;
+  
+  h2, h3, p {
+    color: white;
+  }
+
+  .col {
+    vertical-align: top;
+    width: 33.3%;
+    float: left;
+    display: inline-block;
+  }
+}
+
+
+
