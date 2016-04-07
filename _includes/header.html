@@ -4,10 +4,13 @@
 <header class="main-header" role="banner">
   <div class="header-container">
     <a class="site-logo" href="/" title="home">
-      Jekyll Boilerplate
+      W
     </a>
     <nav class="navbar" role="navigation">
       <ul class="nav">
+        <li {% if location == "" %} class="nav__item--current" {% else %} class="nav__item" {% endif %}>
+           <a href="/">Home</a>
+        </li>
       {% for page in site.pages %}
         
         <!-- Compare the page title to the URL -->

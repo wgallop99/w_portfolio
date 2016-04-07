@@ -5,5 +5,15 @@
     display: block;
     margin: 0;
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
+}
+
+
+// Row Styling 
+
+.row {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 40px 20px;
+    overflow: hidden;
 }
