@@ -23,7 +23,7 @@ h5 {
 // links and buttons
 a {
 	color: $brand-color;
-	transition: all .1s ease;
+	transition: $transition-ease;
 
 	&:hover {
 		color: $brand-color-dark;
@@ -41,7 +41,7 @@ a {
 .btn-primary {
 	border: $border;
 	padding: 10px 15px;
-	transition: all .5s ease;
+	transition: $transition-ease;
 
 	&:hover {
 		background: $text-color;
