@@ -2,10 +2,80 @@
  * Header and Nav Styles
  */
 
+ //Responsive Nav Styles
+html.noScroll {
+	overflow-y: hidden;
+}
+
+#nav-toggle { 
+	display: none;
+	cursor: pointer; 
+	padding: 11px 27px 16px 0px; 
+	position: absolute;
+	right: 30px;
+	z-index: 999;
+}
+
+#nav-toggle span, 
+#nav-toggle span:before,
+#nav-toggle span:after {
+	cursor: pointer;
+	border-radius: 1px;
+	height: 2px;
+	width: 27px;
+	background: $text-color;
+	position: absolute;
+	display: block;
+	content: '';
+	transition: all .5s ease;
+}
+
+#nav-toggle span:before {
+	top: -7px;
+}
+
+#nav-toggle span:after {
+	bottom: -7px; 
+}
+
+//active styles
+
+#nav-toggle.open span {
+	background: transparent;
+}	
+
+#nav-toggle.open span:before, 
+#nav-toggle.open span:after {
+	top: 0;
+}
+
+#nav-toggle.open span:before {
+	transform: rotate(-45deg);
+}
+
+#nav-toggle.open span:after {
+	transform: rotate(45deg);
+}
+
+@include media-query(768px) {
+	
+	header #nav-toggle {
+		display: block;
+	}
+
+	header nav.navbar {
+		display: none;
+	}
+}
+
+
+// Main header styles
+
 .main-header {
  	display: block;
 	padding: 20px 0; 
 	background: white;
+	position: relative;
 
  	// Sticky
     width: 100%;
@@ -40,6 +110,50 @@
 
 	a {
 		text-decoration: underline;
+	}
+}
+
+// Responsive Menu Styles 
+
+.main-header #mobile-menu.cover {
+	display: table;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+
+
+	ul {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100vh;
+	}
+
+	li {
+		display: block;
+		padding: 0;
+	}
+
+	a {
+		text-align: center;
+		width: 100%;
+		padding: 20px 0;
+		font-size: 20px;
+		display: block;
+
+		&:hover {
+			background: $brand-color;
+			color: white;
+			text-decoration: none;
+		}
+
+		&:active {
+			background: $brand-color;
+			color: white;
+			text-decoration: none;
+		}
 	}
 }
 
