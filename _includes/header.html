@@ -2,11 +2,12 @@
 {% capture location %}{{ page.url | split:'/' }}{% endcapture %} 
 
 <header class="main-header" role="banner">
+  <a id="nav-toggle" href="#"><span></span></a>
   <div class="header-container">
     <a class="site-logo" href="/" title="home">
       W
     </a>
-    <nav class="navbar" role="navigation">
+    <nav class="navbar" id="mobile-menu" role="navigation">
       <ul class="nav">
         <li {% if location == "" %} class="nav__item--current" {% else %} class="nav__item" {% endif %}>
            <a href="/">Home</a>

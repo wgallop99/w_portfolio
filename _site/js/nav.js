@@ -46,4 +46,21 @@ console.log("We have js!!!");
         scrollLast = scrollCurr;
     });
 
+
+    //responsive nav 
+
+    document.querySelector( "#nav-toggle" ).addEventListener( "click", function(e) {
+        e.preventDefault();
+        this.classList.toggle( "open" );
+
+        document.querySelector("#mobile-menu").classList.toggle("cover");
+
+        document.querySelector('html').classList.toggle("noScroll");
+
+    });
+
 }( document, window, 0 ));
+
+
+
+
