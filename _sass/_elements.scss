@@ -1,0 +1,51 @@
+// General Element Style Overrides
+
+h1 {
+
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+// links and buttons
+a {
+	color: $brand-color;
+	transition: all .1s ease;
+
+	&:hover {
+		color: $brand-color-dark;
+	}
+
+	&:active {
+		color: $brand-color;
+	}
+
+	&:visited {
+		color: $brand-color;
+	}
+}
+
+.btn-primary {
+	border: $border;
+	padding: 10px 15px;
+	transition: all .5s ease;
+
+	&:hover {
+		background: $text-color;
+		color: white;
+		text-decoration: none;
+	}
+}
