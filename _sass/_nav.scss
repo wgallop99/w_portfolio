@@ -45,6 +45,28 @@
 
 // Footer styles
 
+.extended-footer {
+	text-align: center;
+	border-bottom: 1px dashed $brand-color;
+
+	> div {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	p {
+		margin: 20px 0;
+	}
+
+	.btn-holder {
+		padding: 20px 0;
+	}
+}
+
 .main-footer {
 	padding: 20px;
 

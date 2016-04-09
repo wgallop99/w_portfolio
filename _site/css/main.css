@@ -13,8 +13,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Work Sans", sans-serif;
-  color: #0002FF;
-  background-color: #fdfdfd;
+  color: blue;
+  background-color: white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -67,12 +67,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #0002FF;
+  color: blue;
   text-decoration: none; }
   a:visited {
-    color: #0001b3; }
+    color: #0000b3; }
   a:hover {
-    color: #0002FF;
+    color: blue;
     text-decoration: underline; }
 
 /**
@@ -305,6 +305,19 @@ pre {
 .nav__item--current a {
   text-decoration: underline; }
 
+.extended-footer {
+  text-align: center;
+  border-bottom: 1px dashed blue; }
+  .extended-footer > div {
+    max-width: 600px;
+    margin: 0 auto; }
+  .extended-footer h1 {
+    margin: 0; }
+  .extended-footer p {
+    margin: 20px 0; }
+  .extended-footer .btn-holder {
+    padding: 20px 0; }
+
 .main-footer {
   padding: 20px; }
   .main-footer ul {
@@ -516,10 +529,10 @@ th {
   position: absolute;
   bottom: 100px;
   left: 0;
-  right: 0; }
+  right: 0;
+  color: white; }
   .scroll-arrow a {
     font-size: 4em;
-    color: white;
     cursor: pointer;
     padding: 5px;
     -webkit-transition: all .5s linear 0s;
@@ -528,7 +541,10 @@ th {
     border-radius: 100%;
     -moz-animation: animate 2s infinite;
     -webkit-animation: animate 2s infinite;
-    animation: animate 2s infinite; }
+    animation: animate 2s infinite;
+    color: white; }
+    .scroll-arrow a:visited {
+      color: white; }
     .scroll-arrow a:after {
       content: "Click Me!";
       text-align: center;
@@ -585,7 +601,7 @@ th {
   line-height: 2; }
 
 .skills {
-  background: #0002FF;
+  background: blue;
   text-align: center;
   clear: both; }
   .skills h2, .skills h3, .skills p {
@@ -595,3 +611,31 @@ th {
     width: 33.3%;
     float: left;
     display: inline-block; }
+
+.projects .page-title {
+  text-align: center; }
+.projects .featured-project {
+  border-bottom: 1px dashed blue;
+  text-align: center; }
+
+h2 {
+  margin: 0; }
+
+a {
+  color: blue;
+  transition: all .1s ease; }
+  a:hover {
+    color: navy; }
+  a:active {
+    color: blue; }
+  a:visited {
+    color: blue; }
+
+.btn-primary {
+  border: 1px solid blue;
+  padding: 10px 15px;
+  transition: all .5s ease; }
+  .btn-primary:hover {
+    background: blue;
+    color: white;
+    text-decoration: none; }

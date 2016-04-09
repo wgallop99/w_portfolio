@@ -18,9 +18,9 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #0002FF;
-$background-color: #fdfdfd;
-$brand-color:      #0002FF;
+$text-color:       blue;
+$background-color: white;
+$brand-color:      blue;
 
 $brand-color-light: lighten($brand-color, 40%);
 $brand-color-dark:  darken($brand-color, 25%);
@@ -33,6 +33,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    1080px;
 $on-palm:          600px;
 $on-laptop:        800px;
+
+//borders
+$border: 1px solid $text-color;
 
 
 
@@ -59,5 +62,7 @@ $on-laptop:        800px;
     "syntax-highlighting",
     "nav",
     "normalize",
-    "home"
+    "home",
+    "projects",
+    "elements"
 ;

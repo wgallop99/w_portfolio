@@ -16,10 +16,10 @@
 	bottom: 100px;
 	left: 0;
 	right: 0;
+  color: white;
 
 	a {
 		font-size: 4em;
-		color: white;
 		cursor: pointer;
 		padding: 5px;
 		-webkit-transition: all .5s linear 0s;
@@ -29,7 +29,11 @@
 		-moz-animation: animate 2s infinite;
 		-webkit-animation: animate 2s infinite;
 		animation: animate 2s infinite;
-		
+    color: white;
+
+    &:visited {
+      color: white;
+    }
 
 		&:after {
 	  		content: "Click Me!";
