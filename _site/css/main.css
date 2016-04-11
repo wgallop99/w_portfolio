@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Work Sans", sans-serif;
-  color: blue;
+  color: #3492CC;
   background-color: white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -67,12 +67,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: blue;
+  color: #3492CC;
   text-decoration: none; }
   a:visited {
-    color: #0000b3; }
+    color: #24668f; }
   a:hover {
-    color: blue;
+    color: #3492CC;
     text-decoration: underline; }
 
 /**
@@ -297,7 +297,7 @@ html.noScroll {
   border-radius: 1px;
   height: 2px;
   width: 27px;
-  background: blue;
+  background: #3492CC;
   position: absolute;
   display: block;
   content: '';
@@ -352,9 +352,6 @@ html.noScroll {
       padding: 0 20px;
       vertical-align: middle; }
 
-.nav__item--current a {
-  text-decoration: underline; }
-
 .main-header #mobile-menu.cover {
   display: table;
   height: 100vh;
@@ -377,17 +374,17 @@ html.noScroll {
     font-size: 20px;
     display: block; }
     .main-header #mobile-menu.cover a:hover {
-      background: blue;
+      background: #3492CC;
       color: white;
       text-decoration: none; }
     .main-header #mobile-menu.cover a:active {
-      background: blue;
+      background: #3492CC;
       color: white;
       text-decoration: none; }
 
 .extended-footer {
   text-align: center;
-  border-bottom: 1px dashed blue; }
+  border-bottom: 1px dashed #3492CC; }
   .extended-footer > div {
     max-width: 600px;
     margin: 0 auto; }
@@ -599,7 +596,7 @@ th {
 
 .hero-intro {
   height: 100vh;
-  background: url("../img/mosaic.png") no-repeat;
+  background: url("../img/blueridge.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
@@ -676,12 +673,25 @@ th {
     -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); } }
+.seperator-img {
+  height: 50vh;
+  background: url("../img/blueridge.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.about img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 5px solid #3492CC;
+  margin: 0 auto 40px auto; }
 .about p {
   font-size: 20px;
   line-height: 2; }
 
 .skills {
-  background: blue;
+  background: #3492CC;
   text-align: center;
   clear: both; }
   .skills h2, .skills h3, .skills p {
@@ -692,30 +702,86 @@ th {
     float: left;
     display: inline-block; }
 
+.projects .row {
+  width: 600px; }
 .projects .page-title {
   text-align: center; }
 .projects .featured-project {
-  border-bottom: 1px dashed blue;
   text-align: center; }
+  .projects .featured-project .project-description > p {
+    padding: 20px 0; }
+  .projects .featured-project .project-description .btn-holder {
+    padding: 20px 0; }
+
+.benefitfocus {
+  background: #0077c8; }
+  .benefitfocus h2 {
+    color: white; }
+  .benefitfocus p {
+    color: white; }
+  .benefitfocus a {
+    color: white;
+    background: #53BAD5;
+    border: none; }
+    .benefitfocus a:hover {
+      background: #30a6c5;
+      border: #30a6c5; }
+
+.benefitfocus-media {
+  background: #363A3A; }
+  .benefitfocus-media h2 {
+    color: white; }
+  .benefitfocus-media p {
+    color: white; }
+  .benefitfocus-media a {
+    color: white;
+    background: #0077c8;
+    border: none; }
+    .benefitfocus-media a:visited {
+      color: white;
+      background: #0077c8; }
+    .benefitfocus-media a:hover {
+      background: #005995;
+      border: #005995; }
+
+.kate-mcdonald {
+  background: #d9ae64; }
+  .kate-mcdonald h2 {
+    color: white; }
+  .kate-mcdonald p {
+    color: white; }
+  .kate-mcdonald a {
+    color: white;
+    background: #ad7d2a;
+    border: none; }
+    .kate-mcdonald a:visited {
+      color: white;
+      background: #ad7d2a; }
+    .kate-mcdonald a:hover {
+      background: #845f20; }
 
 h2 {
   margin: 0; }
 
 a {
-  color: blue;
-  transition: all 0.1s ease; }
-  a:hover {
-    color: navy; }
+  color: #3492CC;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none; }
   a:active {
-    color: blue; }
+    color: #3492CC;
+    text-decoration: none; }
   a:visited {
-    color: blue; }
+    color: #3492CC;
+    text-decoration: none; }
+  a:hover {
+    color: #1a4967;
+    text-decoration: none; }
 
 .btn-primary {
-  border: 1px solid blue;
+  border: 1px solid #3492CC;
   padding: 10px 15px;
-  transition: all 0.1s ease; }
+  transition: all 0.3s ease-in-out; }
   .btn-primary:hover {
-    background: blue;
+    background: #3492CC;
     color: white;
     text-decoration: none; }
