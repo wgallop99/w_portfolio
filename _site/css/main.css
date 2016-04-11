@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Work Sans", sans-serif;
-  color: #3492CC;
+  color: blue;
   background-color: white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -67,12 +67,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #3492CC;
+  color: blue;
   text-decoration: none; }
   a:visited {
-    color: #24668f; }
+    color: #0000b3; }
   a:hover {
-    color: #3492CC;
+    color: blue;
     text-decoration: underline; }
 
 /**
@@ -297,7 +297,7 @@ html.noScroll {
   border-radius: 1px;
   height: 2px;
   width: 27px;
-  background: #3492CC;
+  background: blue;
   position: absolute;
   display: block;
   content: '';
@@ -377,17 +377,17 @@ html.noScroll {
     font-size: 20px;
     display: block; }
     .main-header #mobile-menu.cover a:hover {
-      background: #3492CC;
+      background: blue;
       color: white;
       text-decoration: none; }
     .main-header #mobile-menu.cover a:active {
-      background: #3492CC;
+      background: blue;
       color: white;
       text-decoration: none; }
 
 .extended-footer {
   text-align: center;
-  border-bottom: 1px dashed #3492CC; }
+  border-bottom: 1px dashed blue; }
   .extended-footer > div {
     max-width: 600px;
     margin: 0 auto; }
@@ -681,7 +681,7 @@ th {
   line-height: 2; }
 
 .skills {
-  background: #3492CC;
+  background: blue;
   text-align: center;
   clear: both; }
   .skills h2, .skills h3, .skills p {
@@ -695,27 +695,27 @@ th {
 .projects .page-title {
   text-align: center; }
 .projects .featured-project {
-  border-bottom: 1px dashed #3492CC;
+  border-bottom: 1px dashed blue;
   text-align: center; }
 
 h2 {
   margin: 0; }
 
 a {
-  color: #3492CC;
+  color: blue;
   transition: all 0.1s ease; }
   a:hover {
-    color: #1a4967; }
+    color: navy; }
   a:active {
-    color: #3492CC; }
+    color: blue; }
   a:visited {
-    color: #3492CC; }
+    color: blue; }
 
 .btn-primary {
-  border: 1px solid #3492CC;
+  border: 1px solid blue;
   padding: 10px 15px;
   transition: all 0.1s ease; }
   .btn-primary:hover {
-    background: #3492CC;
+    background: blue;
     color: white;
     text-decoration: none; }
