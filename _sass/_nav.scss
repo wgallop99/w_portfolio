@@ -1,3 +1,4 @@
+
 /**
  * Header and Nav Styles
  */
@@ -12,7 +13,7 @@ html.noScroll {
 	cursor: pointer; 
 	padding: 11px 27px 16px 0px; 
 	position: absolute;
-	right: 30px;
+	right: 70px;
 	z-index: 999;
 }
 
@@ -72,25 +73,28 @@ html.noScroll {
 // Main header styles
 
 .main-header {
- 	display: block;
-	padding: 20px 0; 
-	background: white;
-	position: relative;
-
- 	// Sticky
-    width: 100%;
+ 	width: 100%;
+    padding: 40px 0;
+    background-color: #fff;
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+    transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+    -webkit-transition-property: -webkit-transform, height, padding-top, padding-left;
+    transition-property: transform, height, padding-top, padding-left;
 
     .site-logo {
-    	padding-left: 20px;
+    	padding-left: 70px;
     }
 
  	nav {
  		display: block;
  		float: right;
+ 		margin-right: 50px;
  	}
 
  	ul {
@@ -105,6 +109,25 @@ html.noScroll {
  		}
  	}
  }
+
+ // Special State Nav Classes
+
+ header.main-header--narrow {
+ 	-webkit-box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
+    box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+ }
+
+header.main-header--hidden {
+    -webkit-transform: translateY( -100% );
+    -ms-transform: translateY( -100% );
+    transform: translateY( -100% );
+}
+
+.main-header li.nav__item--current a {
+	color: $brand-color-dark;
+}
 
 
 // Responsive Menu Styles 
