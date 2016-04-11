@@ -2,14 +2,103 @@
 
 .projects {
 
+	.row {
+		width: 600px;
+	}
+
 	.page-title {
 		text-align: center;
 	}
 
 	.featured-project {
-		border-bottom: 1px dashed $text-color;
 		text-align: center;
+
+		.project-description {
+			> p {
+				padding: 20px 0;
+			}
+
+			.btn-holder{
+				padding: 20px 0;
+			}	
+		}
+	}
+}
+
+.benefitfocus {
+	background: #0077c8;
+
+	h2 {
+		color: white;
 	}
 
+	p {
+		color: white;
+	}
 
+	a {
+		color: white;
+		background: #53BAD5;
+		border: none;
+
+		&:hover {
+			background: darken(#53BAD5, 10%);
+			border: darken(#53BAD5, 10%);
+		}
+	}
+}
+
+.benefitfocus-media {
+	background: #363A3A;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+	a {
+		color: white;
+		background: #0077c8;
+		border: none;
+
+		&:visited {
+			color: white;
+			background: #0077c8;
+		}
+
+		&:hover {
+			background: darken(#0077c8, 10%);
+			border: darken(#0077c8, 10%);
+		}
+	}
+}
+
+.kate-mcdonald {
+	background: #d9ae64;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+	a {
+		color: white;
+		background: darken(#d9ae64, 20%);
+		border: none;
+
+		&:visited {
+			color: white;
+			background: darken(#d9ae64, 20%);
+		}
+
+		&:hover {
+			background: darken(#d9ae64, 30%);
+		}
+	}
 }

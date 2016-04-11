@@ -3,7 +3,7 @@
 
 .hero-intro {
 	height: 100vh;
-	background: url('../img/mosaic.png') no-repeat;
+	background: url('../img/blueridge.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
 	position: relative;
@@ -112,8 +112,27 @@
 
 ///////////////////////////////////////////////////
 
+.seperator-img {
+  height: 50vh;
+  background: url('../img/blueridge.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+////////////////////////////////////////////////////
+
 
 .about {
+
+  img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid #3492CC;
+    margin: 0 auto 40px auto;
+
+  }
 
 	p {
 		font-size: 20px;

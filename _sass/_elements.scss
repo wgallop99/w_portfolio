@@ -23,25 +23,29 @@ h5 {
 // links and buttons
 a {
 	color: $brand-color;
-	transition: $transition-ease;
-
-	&:hover {
-		color: $brand-color-dark;
-	}
+	transition: $transition-in-out;
+	text-decoration: none;
 
 	&:active {
 		color: $brand-color;
+		text-decoration: none;
 	}
 
 	&:visited {
 		color: $brand-color;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: $brand-color-dark;
+		text-decoration: none;
 	}
 }
 
 .btn-primary {
 	border: $border;
 	padding: 10px 15px;
-	transition: $transition-ease;
+	transition: $transition-in-out;
 
 	&:hover {
 		background: $text-color;
