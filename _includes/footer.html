@@ -11,25 +11,9 @@
 
 <footer class="main-footer" role="contentinfo">
 
-	<nav class="secondary-navbar" role="navigation">
-		<ul class="nav">
-			<li {% if location == "" %} class="nav__item--current" {% else %} class="nav__item" {% endif %}>
-           		<a href="/">Home</a>
-        	</li>
-		{% for page in site.pages %}
-
-			<!-- Compare the page title to the URL -->
-			{% assign current = page.title | downcase %}
-
-			{% if page.title %}
-			<li {% if location == current %} class="nav__item--current" {% else %} class="nav__item" {% endif %}>
-			  / <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-			</li>
-			{% endif %}
-
-		{% endfor %}
-		</ul>
-	</nav>
+	<div class="copyright">
+		<p>© {{ 'now' | date: "%Y" }} Will Gallop. All rights reserved.</p>
+	</div>
 
 	<div class="social">
 		<ul>

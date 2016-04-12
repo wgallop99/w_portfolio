@@ -178,7 +178,6 @@ header.main-header--hidden {
 
 .extended-footer {
 	text-align: center;
-	border-bottom: 1px dashed $brand-color;
 
 	> div {
 		max-width: 600px;
@@ -200,6 +199,7 @@ header.main-header--hidden {
 
 .main-footer {
 	padding: 20px;
+	background: $brand-color-light;
 
 	ul {
 		list-style-type: none;
@@ -211,8 +211,12 @@ header.main-header--hidden {
 		}
 	}
 
-	.social, .secondary-navbar {
+	.social, .copyright {
 		display: inline-block;
+
+		p {
+			margin-bottom: 0;
+		}
 	}
 
 	.social {

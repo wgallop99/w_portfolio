@@ -84,8 +84,8 @@ console.log("We have js!!!");
 
     //responsive nav 
 
-    document.querySelector( "#nav-toggle" ).addEventListener( "click", function(e) {
-        e.preventDefault();
+    document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+
         this.classList.toggle( "open" );
 
         document.querySelector("#mobile-menu").classList.toggle("cover");

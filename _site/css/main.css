@@ -135,6 +135,9 @@ pre {
   padding: 40px 20px;
   overflow: hidden; }
 
+.page-title {
+  margin-top: 100px; }
+
 /**
  * Syntax highlighting styles
  */
@@ -402,8 +405,7 @@ header.main-header--hidden {
       text-decoration: none; }
 
 .extended-footer {
-  text-align: center;
-  border-bottom: 1px dashed #3492CC; }
+  text-align: center; }
   .extended-footer > div {
     max-width: 600px;
     margin: 0 auto; }
@@ -415,15 +417,18 @@ header.main-header--hidden {
     padding: 20px 0; }
 
 .main-footer {
-  padding: 20px; }
+  padding: 20px;
+  background: #d7eaf5; }
   .main-footer ul {
     list-style-type: none;
     margin: 0; }
     .main-footer ul li {
       display: inline-block;
       vertical-align: middle; }
-  .main-footer .social, .main-footer .secondary-navbar {
+  .main-footer .social, .main-footer .copyright {
     display: inline-block; }
+    .main-footer .social p, .main-footer .copyright p {
+      margin-bottom: 0; }
   .main-footer .social {
     float: right; }
     .main-footer .social li {
@@ -719,7 +724,18 @@ th {
     vertical-align: top;
     width: 33.3%;
     float: left;
-    display: inline-block; }
+    display: inline-block;
+    margin: 40px 0; }
+  .skills .btn-holder {
+    display: block;
+    margin-top: 20px;
+    padding: 20px 0; }
+    .skills .btn-holder a {
+      color: white;
+      background: transparent;
+      border: 1px solid white; }
+      .skills .btn-holder a:hover {
+        background: #1a4967; }
 
 .projects .row {
   width: 600px; }
