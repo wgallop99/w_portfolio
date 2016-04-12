@@ -3,7 +3,7 @@
  * Header and Nav Styles
  */
 
- //Responsive Nav Styles
+/* Responsive Nav Styles */
 html.noScroll {
 	overflow-y: hidden;
 }
@@ -39,7 +39,7 @@ html.noScroll {
 	bottom: -7px; 
 }
 
-//active styles
+/* active styles */
 
 #nav-toggle.open span {
 	background: transparent;
@@ -58,7 +58,7 @@ html.noScroll {
 	transform: rotate(45deg);
 }
 
-@include media-query(768px) {
+@include breakpoint("small") {
 	
 	header #nav-toggle {
 		display: block;
@@ -70,7 +70,7 @@ html.noScroll {
 }
 
 
-// Main header styles
+/* Main header styles */
 
 .main-header {
  	width: 100%;
@@ -80,12 +80,10 @@ html.noScroll {
     z-index: 999;
     top: 0;
     left: 0;
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
-    -webkit-transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
-    transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
-    -webkit-transition-property: -webkit-transform, height, padding-top, padding-left;
-    transition-property: transform, height, padding-top, padding-left;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
 
     .site-logo {
     	padding-left: 70px;
@@ -110,9 +108,9 @@ html.noScroll {
  	}
  }
 
- // Special State Nav Classes
+/*  Special State Nav Classes */
 
- header.main-header--narrow {
+header.main-header--narrow {
  	-webkit-box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
     box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
     padding: 20px 0;
@@ -130,7 +128,7 @@ header.main-header--hidden {
 }
 
 
-// Responsive Menu Styles 
+/* Responsive Menu Styles  */
 
 .main-header #mobile-menu.cover {
 	display: table;
@@ -170,64 +168,6 @@ header.main-header--hidden {
 			background: $brand-color;
 			color: white;
 			text-decoration: none;
-		}
-	}
-}
-
-// Footer styles
-
-.extended-footer {
-	text-align: center;
-
-	> div {
-		max-width: 600px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		margin: 0;
-	}
-
-	p {
-		margin: 20px 0;
-	}
-
-	.btn-holder {
-		padding: 20px 0;
-	}
-}
-
-.main-footer {
-	padding: 20px;
-	background: $brand-color-light;
-
-	ul {
-		list-style-type: none;
-		margin: 0;
-
-		li {
-			display: inline-block;
-			vertical-align: middle;
-		}
-	}
-
-	.social, .copyright {
-		display: inline-block;
-
-		p {
-			margin-bottom: 0;
-		}
-	}
-
-	.social {
-		float: right;
-
-		li {
-			padding: 0 10px;
-		}
-
-		a {
-			font-size: 20px;
 		}
 	}
 }

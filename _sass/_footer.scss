@@ -1,0 +1,58 @@
+// Footer styles
+
+.extended-footer {
+	text-align: center;
+
+	> div {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	p {
+		margin: 20px 0;
+	}
+
+	.btn-holder {
+		padding: 20px 0;
+	}
+}
+
+.main-footer {
+	padding: 40px;
+	background: $brand-color-light;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.social, .copyright {
+		display: inline-block;
+
+		p {
+			margin-bottom: 0;
+			font-size: 12px;
+		}
+	}
+
+	.social {
+		float: right;
+
+		li {
+			padding: 0 10px;
+		}
+
+		a {
+			font-size: 20px;
+		}
+	}
+}

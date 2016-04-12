@@ -51,10 +51,22 @@ $transition-in-out: all .3s ease-in-out;
 //     }
 // }
 
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+@mixin breakpoint($name) {
+  @if $name == "small" {
+    @media (max-width: 768px) {
+      @content;
     }
+  }
+  @else if $name == "medium" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $name == "large" {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
 }
 
 
@@ -68,5 +80,6 @@ $transition-in-out: all .3s ease-in-out;
     "normalize",
     "home",
     "projects",
-    "elements"
+    "elements",
+    "footer"
 ;

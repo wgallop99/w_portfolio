@@ -282,6 +282,7 @@ pre {
 /**
  * Header and Nav Styles
  */
+/* Responsive Nav Styles */
 html.noScroll {
   overflow-y: hidden; }
 
@@ -312,6 +313,7 @@ html.noScroll {
 #nav-toggle span:after {
   bottom: -7px; }
 
+/* active styles */
 #nav-toggle.open span {
   background: transparent; }
 
@@ -325,12 +327,13 @@ html.noScroll {
 #nav-toggle.open span:after {
   transform: rotate(45deg); }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   header #nav-toggle {
     display: block; }
 
   header nav.navbar {
     display: none; } }
+/* Main header styles */
 .main-header {
   width: 100%;
   padding: 40px 0;
@@ -339,12 +342,10 @@ html.noScroll {
   z-index: 999;
   top: 0;
   left: 0;
-  -webkit-transition-duration: .5s;
-  transition-duration: .5s;
-  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transition-property: -webkit-transform, height, padding-top, padding-left;
-  transition-property: transform, height, padding-top, padding-left; }
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
   .main-header .site-logo {
     padding-left: 70px; }
   .main-header nav {
@@ -360,6 +361,7 @@ html.noScroll {
       padding: 0 20px;
       vertical-align: middle; }
 
+/*  Special State Nav Classes */
 header.main-header--narrow {
   -webkit-box-shadow: 0 0.063em 0.25em rgba(37, 50, 55, 0.25);
   box-shadow: 0 0.063em 0.25em rgba(37, 50, 55, 0.25);
@@ -374,6 +376,7 @@ header.main-header--hidden {
 .main-header li.nav__item--current a {
   color: #1a4967; }
 
+/* Responsive Menu Styles  */
 .main-header #mobile-menu.cover {
   display: table;
   height: 100vh;
@@ -403,38 +406,6 @@ header.main-header--hidden {
       background: #3492CC;
       color: white;
       text-decoration: none; }
-
-.extended-footer {
-  text-align: center; }
-  .extended-footer > div {
-    max-width: 600px;
-    margin: 0 auto; }
-  .extended-footer h1 {
-    margin: 0; }
-  .extended-footer p {
-    margin: 20px 0; }
-  .extended-footer .btn-holder {
-    padding: 20px 0; }
-
-.main-footer {
-  padding: 20px;
-  background: #d7eaf5; }
-  .main-footer ul {
-    list-style-type: none;
-    margin: 0; }
-    .main-footer ul li {
-      display: inline-block;
-      vertical-align: middle; }
-  .main-footer .social, .main-footer .copyright {
-    display: inline-block; }
-    .main-footer .social p, .main-footer .copyright p {
-      margin-bottom: 0; }
-  .main-footer .social {
-    float: right; }
-    .main-footer .social li {
-      padding: 0 10px; }
-    .main-footer .social a {
-      font-size: 20px; }
 
 html {
   font-family: sans-serif;
@@ -718,7 +689,9 @@ th {
   background: #3492CC;
   text-align: center;
   clear: both; }
-  .skills h2, .skills h3, .skills p {
+  .skills h2,
+  .skills h3,
+  .skills p {
     color: white; }
   .skills .col {
     vertical-align: top;
@@ -820,3 +793,36 @@ a {
     background: #3492CC;
     color: white;
     text-decoration: none; }
+
+.extended-footer {
+  text-align: center; }
+  .extended-footer > div {
+    max-width: 600px;
+    margin: 0 auto; }
+  .extended-footer h1 {
+    margin: 0; }
+  .extended-footer p {
+    margin: 20px 0; }
+  .extended-footer .btn-holder {
+    padding: 20px 0; }
+
+.main-footer {
+  padding: 40px;
+  background: #d7eaf5; }
+  .main-footer ul {
+    list-style-type: none;
+    margin: 0; }
+    .main-footer ul li {
+      display: inline-block;
+      vertical-align: middle; }
+  .main-footer .social, .main-footer .copyright {
+    display: inline-block; }
+    .main-footer .social p, .main-footer .copyright p {
+      margin-bottom: 0;
+      font-size: 12px; }
+  .main-footer .social {
+    float: right; }
+    .main-footer .social li {
+      padding: 0 10px; }
+    .main-footer .social a {
+      font-size: 20px; }
