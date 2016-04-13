@@ -3,7 +3,7 @@
 .projects {
 
 	.row {
-		width: 600px;
+		max-width: 700px;
 	}
 
 	.page-title {
@@ -13,15 +13,19 @@
 	.featured-project {
 		text-align: center;
 
-		.project-description {
-			> p {
-				padding: 20px 0;
-			}
-
-			.btn-holder{
-				padding: 20px 0;
-			}	
+		img {
+			margin-bottom: 40px;
 		}
+	}
+
+	.project-description {
+		> p {
+			padding: 20px 0;
+		}
+
+		.btn-holder{
+			padding: 20px 0;
+		}	
 	}
 }
 
@@ -40,6 +44,11 @@
 		color: white;
 		background: #53BAD5;
 		border: none;
+
+		&:visited {
+			color: white;
+			background: #53BAD5;
+		}
 
 		&:hover {
 			background: darken(#53BAD5, 10%);
