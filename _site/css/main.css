@@ -132,7 +132,7 @@ pre {
 .row {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 80px 20px;
   overflow: hidden; }
 
 .page-title {
@@ -348,10 +348,14 @@ html.noScroll {
   transition-duration: 1s; }
   .main-header .site-logo {
     padding-left: 70px; }
+    .main-header .site-logo img {
+      width: 50px;
+      height: 50px; }
   .main-header nav {
     display: block;
     float: right;
-    margin-right: 50px; }
+    margin-right: 50px;
+    padding: 12px 0; }
   .main-header ul {
     list-style-type: none;
     margin: 0;
@@ -617,20 +621,9 @@ th {
     color: white; }
     .scroll-arrow a:visited {
       color: white; }
-    .scroll-arrow a:after {
-      content: "Click Me!";
-      text-align: center;
-      font-size: 19px;
-      position: absolute;
-      width: 100px;
-      top: -30px;
-      left: -29px;
-      display: none; }
     .scroll-arrow a:hover {
-      text-decoration: none; }
-    .scroll-arrow a:hover:after {
       text-decoration: none;
-      display: inline-block; }
+      color: white; }
 
 @-moz-keyframes animate {
   0%, 20%, 50%, 80%, 100% {
@@ -711,15 +704,17 @@ th {
         background: #1a4967; }
 
 .projects .row {
-  width: 600px; }
+  max-width: 700px; }
 .projects .page-title {
   text-align: center; }
 .projects .featured-project {
   text-align: center; }
-  .projects .featured-project .project-description > p {
-    padding: 20px 0; }
-  .projects .featured-project .project-description .btn-holder {
-    padding: 20px 0; }
+  .projects .featured-project img {
+    margin-bottom: 40px; }
+.projects .project-description > p {
+  padding: 20px 0; }
+.projects .project-description .btn-holder {
+  padding: 20px 0; }
 
 .benefitfocus {
   background: #0077c8; }
@@ -731,6 +726,9 @@ th {
     color: white;
     background: #53BAD5;
     border: none; }
+    .benefitfocus a:visited {
+      color: white;
+      background: #53BAD5; }
     .benefitfocus a:hover {
       background: #30a6c5;
       border: #30a6c5; }
