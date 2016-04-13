@@ -35,24 +35,9 @@
       color: white;
     }
 
-		&:after {
-	  		content: "Click Me!";
-	  		text-align: center;
-		    font-size: 19px;
-		    position: absolute;
-		    width: 100px;
-		    top: -30px;
-		    left: -29px;
-		    display: none;
-	 	}
-
 	 	&:hover {
 	 		text-decoration: none;
-	 	}
-
-	 	&:hover:after {
-	 		text-decoration: none;
-	    	display: inline-block;
+      color: white;
 	 	}
   }
 }
