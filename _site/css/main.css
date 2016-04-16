@@ -337,7 +337,6 @@ html.noScroll {
 .main-header {
   width: 100%;
   padding: 40px 0;
-  background-color: #fff;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -603,7 +602,7 @@ th {
 .scroll-arrow {
   text-align: center;
   position: absolute;
-  bottom: 100px;
+  bottom: 20px;
   left: 0;
   right: 0;
   color: white; }
@@ -665,7 +664,17 @@ th {
   height: 50vh;
   background: url("../img/blueridge.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  position: relative; }
+  .seperator-img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top left, #000000, #3492CC);
+    opacity: .8; }
 
 .about img {
   display: block;
@@ -703,6 +712,7 @@ th {
       .skills .btn-holder a:hover {
         background: #1a4967; }
 
+/* Projects Page Styles */
 .projects .row {
   max-width: 700px; }
 .projects .page-title {
@@ -824,3 +834,32 @@ a {
       padding: 0 10px; }
     .main-footer .social a {
       font-size: 20px; }
+
+/* Blog styles  */
+.blog .page-title {
+  text-align: center; }
+.blog div.row {
+  max-width: 700px;
+  padding-top: 0; }
+.blog .post {
+  list-style-type: none; }
+.blog .post__item {
+  padding: 40px 0;
+  border-bottom: 1px solid #3492CC; }
+.blog .post__item:first-child {
+  padding-top: 0; }
+.blog .post__item:last-child {
+  border-bottom: none; }
+
+/* Single post templated styles */
+.single-post .row {
+  max-width: 700px; }
+.single-post .post__header {
+  text-align: center; }
+.single-post .post__meta {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #3492CC; }
+.single-post article {
+  padding-top: 20px; }
+.single-post .comment {
+  background: #d7eaf5; }
