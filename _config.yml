@@ -3,7 +3,7 @@ title: Will Gallop
 email: wgallop99@gmail.com
 url: "http://willgallop.me" # the base hostname & protocol for your site
 twitter_username: wgallop99
-paginate: 2
+paginate: 3
 
 # Build settings
 markdown: kramdown

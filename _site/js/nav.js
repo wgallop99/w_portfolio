@@ -1,12 +1,13 @@
 
 console.log("We have js!!!");
+
 ( function ( document, window, index )
     {
         'use strict';
 
         var hideBar   = 'main-header--hidden',
             scrollNav   = 'main-header--narrow',
-            navOffset  = 100,
+            navOffset  = 130,
             throttleTimeout = 200,
             element         = document.querySelector( '.main-header' );
 
@@ -38,6 +39,18 @@ console.log("We have js!!!");
                     }
                 };
             };
+
+        // responsive nav 
+
+        document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+
+            this.classList.toggle( "open" );
+
+            document.querySelector("#mobile-menu").classList.toggle("cover");
+
+            document.querySelector('html').classList.toggle("noScroll");
+
+        });
 
         window.addEventListener( 'scroll', throttle( throttleTimeout, function()
         {
@@ -80,20 +93,6 @@ console.log("We have js!!!");
             winScrollPre = winScrollCurrent;
 
         }));
-
-
-    //responsive nav 
-
-    document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-
-        this.classList.toggle( "open" );
-
-        document.querySelector("#mobile-menu").classList.toggle("cover");
-
-        document.querySelector('html').classList.toggle("noScroll");
-
-    });
-
 }( document, window, 0 ));
 
     
