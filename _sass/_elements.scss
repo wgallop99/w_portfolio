@@ -44,12 +44,31 @@ a {
 
 .btn-primary {
 	border: $border;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	transition: $transition-in-out;
+	border-radius: 3px;
 
 	&:hover {
 		background: $text-color;
 		color: white;
 		text-decoration: none;
+	}
+}
+
+.btn-secondary {
+	color: white;
+	background: $lipstick;
+	border: none;
+	padding: 10px 20px;
+	transition: $transition-in-out;
+	border-radius: 3px;
+
+	&:hover {
+		background: darken($lipstick, 10%);
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: white;
 	}
 }

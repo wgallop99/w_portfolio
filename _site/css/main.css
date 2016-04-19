@@ -691,26 +691,23 @@ th {
   background: #3492CC;
   text-align: center;
   clear: both; }
-  .skills h2,
-  .skills h3,
+  .skills h1,
   .skills p {
-    color: white; }
+    color: white;
+    padding: 0 10px; }
+  .skills h3 {
+    color: white;
+    font-size: 40px; }
   .skills .col {
     vertical-align: top;
     width: 33.3%;
     float: left;
     display: inline-block;
-    margin: 40px 0; }
+    margin: 20px 0; }
   .skills .btn-holder {
     display: block;
-    margin-top: 20px;
-    padding: 20px 0; }
-    .skills .btn-holder a {
-      color: white;
-      background: transparent;
-      border: 1px solid white; }
-      .skills .btn-holder a:hover {
-        background: #1a4967; }
+    padding: 20px 0;
+    clear: both; }
 
 /* Projects Page Styles */
 .projects .row {
@@ -795,12 +792,26 @@ a {
 
 .btn-primary {
   border: 1px solid #3492CC;
-  padding: 10px 15px;
-  transition: all 0.3s ease-in-out; }
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px; }
   .btn-primary:hover {
     background: #3492CC;
     color: white;
     text-decoration: none; }
+
+.btn-secondary {
+  color: white;
+  background: #FF9381;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px; }
+  .btn-secondary:hover {
+    background: #ff674e;
+    text-decoration: none; }
+  .btn-secondary:visited {
+    color: white; }
 
 .extended-footer {
   text-align: center; }

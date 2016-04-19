@@ -142,10 +142,15 @@
   text-align: center;
   clear: both;
   
-  h2, 
-  h3, 
+  h1, 
   p {
     color: white;
+    padding: 0 10px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 40px;
   }
 
   .col {
@@ -153,23 +158,13 @@
     width: 33.3%;
     float: left;
     display: inline-block;
-    margin: 40px 0;
+    margin: 20px 0;
   }
 
   .btn-holder {
     display: block;
-    margin-top: 20px;
     padding: 20px 0;
-
-    a {
-      color: white;
-      background: transparent;
-      border: 1px solid white;
-
-      &:hover {
-        background: $brand-color-dark;
-      }
-    }
+    clear: both;
   }
 }
 
