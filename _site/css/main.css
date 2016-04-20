@@ -680,8 +680,8 @@ th {
   display: block;
   width: 200px;
   height: 200px;
-  border-radius: 100px;
-  border: 5px solid #3492CC;
+  border-radius: 100%;
+  border: 3px solid #CC2021;
   margin: 0 auto 40px auto; }
 .about p {
   font-size: 20px;
@@ -763,14 +763,20 @@ th {
     color: white; }
   .kate-mcdonald p {
     color: white; }
-  .kate-mcdonald a {
+    .kate-mcdonald p a {
+      color: #845f20;
+      background: transparent; }
+    .kate-mcdonald p a:hover {
+      text-decoration: none;
+      border-bottom: 4px solid #845f20; }
+  .kate-mcdonald .btn-holder a {
     color: white;
     background: #ad7d2a;
     border: none; }
-    .kate-mcdonald a:visited {
+    .kate-mcdonald .btn-holder a:visited {
       color: white;
       background: #ad7d2a; }
-    .kate-mcdonald a:hover {
+    .kate-mcdonald .btn-holder a:hover {
       background: #845f20; }
 
 h2 {
@@ -802,13 +808,13 @@ a {
 
 .btn-secondary {
   color: white;
-  background: #FF9381;
+  background: #CC2021;
   border: none;
   padding: 10px 20px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px; }
   .btn-secondary:hover {
-    background: #ff674e;
+    background: #a0191a;
     text-decoration: none; }
   .btn-secondary:visited {
     color: white; }

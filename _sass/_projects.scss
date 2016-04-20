@@ -94,9 +94,20 @@
 
 	p {
 		color: white;
+		
+		a {
+			color: darken(#d9ae64, 30%);
+			background: transparent;
+		}
+
+		a:hover {
+			text-decoration: none;
+			border-bottom: 4px solid darken(#d9ae64, 30%);
+		}
+
 	}
 
-	a {
+	.btn-holder a {
 		color: white;
 		background: darken(#d9ae64, 20%);
 		border: none;
