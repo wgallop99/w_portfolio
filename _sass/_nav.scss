@@ -112,6 +112,10 @@ html.noScroll {
  			vertical-align: middle;
  		}
  	}
+
+ 	a {
+ 		@extend .btn-animated; 
+ 	}
  }
 
 /*  Special State Nav Classes */
