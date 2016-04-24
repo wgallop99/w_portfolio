@@ -42,9 +42,9 @@
     border-radius: 100px / 50px;
     background: rgba(20, 20, 20, .4);
     
-    -webkit-transition: all 1s linear 0s;
-    transition: all 1s linear 0s;
-    animation: shadow-expand 3s infinite;
+    -webkit-transition: all 5s linear 0s;
+    transition: all 5s linear 0s;
+    animation: shadow-expand 5s infinite;
   }
 
   .hero-avatar {
@@ -53,11 +53,11 @@
 
     img {
       height: 300px;
-      -moz-animation: up-down 3s infinite;
-      -webkit-animation: up-down 3s infinite;
-      animation: up-down 3s infinite;
-      -webkit-transition: all 1s linear 0s;
-      transition: all 1s linear 0s;
+      -moz-animation: up-down 5s infinite;
+      -webkit-animation: up-down 5s infinite;
+      animation: up-down 5s infinite;
+      -webkit-transition: all 5s linear 0s;
+      transition: all 5s linear 0s;
     }
   }
 
@@ -83,15 +83,15 @@
 		padding: 5px;
 		border: 5px solid transparent;
 		border-radius: 100%;
-    color: $lipstick;
+    color: white;
 
     &:visited {
-      color: $lipstick;
+      color: white;
     }
 
 	 	&:hover {
 	 		text-decoration: none;
-      color: $lipstick;
+      color: white;
 	 	}
   }
 }
