@@ -11,9 +11,9 @@ html.noScroll {
 #nav-toggle { 
 	display: none;
 	cursor: pointer; 
-	padding: 11px 27px 16px 0px; 
+	padding: 20px 40px 16px 0px;
 	position: absolute;
-	right: 70px;
+	right: 30px;
 	z-index: 999;
 }
 
@@ -86,7 +86,7 @@ html.noScroll {
 
 
     .site-logo {
-    	padding-left: 70px;
+    	padding-left: 20px;
 
     	img {
     		width: 50px;
@@ -97,7 +97,6 @@ html.noScroll {
  	nav {
  		display: block;
  		float: right;
- 		margin-right: 50px;
  		padding: 12px 0;
  	}
 
@@ -111,6 +110,11 @@ html.noScroll {
  			padding: 0 20px;
  			vertical-align: middle;
  		}
+ 	}
+
+ 	.header-container {
+ 		max-width: 970px;
+ 		margin: 0 auto;
  	}
 
  	a {
