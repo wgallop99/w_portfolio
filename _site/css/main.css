@@ -594,7 +594,7 @@ th {
 
 .hero-intro {
   height: 100vh;
-  background: #d7eaf5;
+  background: white;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
