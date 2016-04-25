@@ -26,6 +26,7 @@ a {
 	transition: $transition-in-out;
 	text-decoration: none;
 
+
 	&:active {
 		color: $brand-color;
 		text-decoration: none;
@@ -39,6 +40,31 @@ a {
 	&:hover {
 		color: $brand-color-dark;
 		text-decoration: none;
+	}
+}
+
+.btn-animated {
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -5px;
+		left: 0;
+		background-color: $brand-color-dark;
+		visibility: hidden;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+
+	&:hover:before {
+		visibility: visible;
+		-webkit-transform: scaleX(.5);
+		transform: scaleX(.5);
 	}
 }
 
