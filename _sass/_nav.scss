@@ -67,6 +67,14 @@ html.noScroll {
 	header nav.navbar {
 		display: none;
 	}
+
+	.main-header li.nav__item--current a:before {
+		display: none;
+	}
+
+	.main-header li.nav__item a:before {
+		display: none;
+	}
 }
 
 
@@ -116,13 +124,11 @@ html.noScroll {
  		max-width: 970px;
  		margin: 0 auto;
  	}
-
- 	a {
- 		@extend .btn-animated; 
- 	}
  }
 
 /*  Special State Nav Classes */
+
+/// Main Header states
 
 header.main-header--narrow {
  	-webkit-box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
@@ -137,9 +143,34 @@ header.main-header--hidden {
     transform: translateY( -100% );
 }
 
+
+/// Individual button states
+
+.main-header li.nav__item a {
+	@extend .btn-animated;
+}
+
 .main-header li.nav__item--current a {
 	color: $brand-color-dark;
+	position: relative;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -5px;
+		left: 0;
+		background-color: $brand-color-dark;
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+		-webkit-transform: scaleX(.5);
+		transform: scaleX(.5);
+	}
+
 }
+
+/////////////////////////////////////
 
 
 /* Responsive Menu Styles  */
