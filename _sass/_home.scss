@@ -228,6 +228,28 @@
 /// Shadow Expand 
 //////////////////////////
 
+@-moz-keyframes shadow-expand {
+  0%, 100% {
+    width: 100px;
+  }
+
+  50% {
+    width: 50px; 
+    height: 10px;
+  }
+}
+
+@-webkit-keyframes shadow-expand {
+  0%, 100% {
+    width: 100px;
+  }
+
+  50% {
+    width: 50px; 
+    height: 10px;
+  }
+}
+
 @keyframes shadow-expand {
   0%, 100% {
     width: 100px;
