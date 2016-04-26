@@ -18,12 +18,12 @@
 		}
 	}
 
-	.featured-project__description {
+	.featured-project-description {
 		> p {
-			padding: 20px 0;
+			padding: 10px 0;
 		}
 
-		.btn-holder{
+		.btn-holder {
 			padding: 20px 0;
 		}	
 	}
@@ -40,7 +40,7 @@
 		color: white;
 	}
 
-	a {
+	.btn-holder a {
 		color: white;
 		background: #53BAD5;
 		border: none;
@@ -68,7 +68,7 @@
 		color: white;
 	}
 
-	a {
+	.btn-holder a {
 		color: white;
 		background: #0077c8;
 		border: none;
@@ -85,6 +85,8 @@
 	}
 }
 
+
+
 .kate-mcdonald {
 	background: #d9ae64;
 
@@ -94,17 +96,14 @@
 
 	p {
 		color: white;
-		
+
 		a {
-			color: darken(#d9ae64, 30%);
-			background: transparent;
-		}
+			color: darken(#d9ae64, 20%);
 
-		a:hover {
-			text-decoration: none;
-			border-bottom: 4px solid darken(#d9ae64, 30%);
+			&:hover {
+				text-decoration: underline;
+			}
 		}
-
 	}
 
 	.btn-holder a {
@@ -124,15 +123,135 @@
 }
 
 
+
+.commish {
+	background: #42bbee;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+	a {
+		color: white;
+		background: $grey-color;
+		border: none;
+
+		&:visited {
+			color: white;
+			background: $grey-color;
+		}
+
+		&:hover {
+			background: $grey-color-dark;
+		}
+	}
+}
+
+.sendsay {
+	background: #b53b3b;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+	.btn-holder a {
+		color: white;
+		background: darken(#b53b3b, 10%);
+		border: none;
+
+		&:visited {
+			color: white;
+			background: darken(#b53b3b, 10%);
+		}
+
+		&:hover {
+			background: darken(#b53b3b, 30%);
+			border: darken(#b53b3b, 30%);
+		}
+	}
+}
+
+.stage {
+	background: #4298b5;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+	.btn-holder a {
+		color: white;
+		background: #2d2d2d;
+		border: none;
+
+		&:visited {
+			color: white;
+			background: #2d2d2d;
+		}
+
+		&:hover {
+			background: darken(#2d2d2d, 10%);
+			border: darken(#2d2d2d, 10%);
+		}
+	}
+}
+
+.powell-peralta {
+	background: #FFD94C;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		color: white;
+
+		a {
+			color: darken(#FFD94C, 20%);
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.btn-holder a {
+		color: white;
+		background: darken(#FFD94C, 20%);
+		border: none;
+
+		&:visited {
+			color: white;
+			background: darken(#FFD94C, 20%);
+		}
+
+		&:hover {
+			background: darken(#FFD94C, 25%);
+		}
+	}
+}
+
+
 /* Cloud Animation Styles */
 
 #clouds {
-
 	padding: 100px 0 0 0;
 	background: #c9dbe9;
 	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	overflow: hidden;
 
 	.cloud {
 		width: 200px; height: 60px;

@@ -332,6 +332,12 @@ html.noScroll {
     display: block; }
 
   header nav.navbar {
+    display: none; }
+
+  .main-header li.nav__item--current a:before {
+    display: none; }
+
+  .main-header li.nav__item a:before {
     display: none; } }
 /* Main header styles */
 .main-header {
@@ -379,7 +385,20 @@ header.main-header--hidden {
   transform: translateY(-100%); }
 
 .main-header li.nav__item--current a {
-  color: #1a4967; }
+  color: #1a4967;
+  position: relative; }
+  .main-header li.nav__item--current a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #1a4967;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5); }
 
 /* Responsive Menu Styles  */
 .main-header #mobile-menu.cover {
@@ -746,6 +765,18 @@ th {
     -ms-transform: translateY(-40px);
     -webkit-transform: translateY(-40px);
     transform: translateY(-40px); } }
+@-moz-keyframes shadow-expand {
+  0%, 100% {
+    width: 100px; }
+  50% {
+    width: 50px;
+    height: 10px; } }
+@-webkit-keyframes shadow-expand {
+  0%, 100% {
+    width: 100px; }
+  50% {
+    width: 50px;
+    height: 10px; } }
 @keyframes shadow-expand {
   0%, 100% {
     width: 100px; }
@@ -761,9 +792,9 @@ th {
   text-align: center; }
   .projects .featured-project img {
     margin-bottom: 40px; }
-.projects .featured-project__description > p {
-  padding: 20px 0; }
-.projects .featured-project__description .btn-holder {
+.projects .featured-project-description > p {
+  padding: 10px 0; }
+.projects .featured-project-description .btn-holder {
   padding: 20px 0; }
 
 .benefitfocus {
@@ -772,14 +803,14 @@ th {
     color: white; }
   .benefitfocus p {
     color: white; }
-  .benefitfocus a {
+  .benefitfocus .btn-holder a {
     color: white;
     background: #53BAD5;
     border: none; }
-    .benefitfocus a:visited {
+    .benefitfocus .btn-holder a:visited {
       color: white;
       background: #53BAD5; }
-    .benefitfocus a:hover {
+    .benefitfocus .btn-holder a:hover {
       background: #30a6c5;
       border: #30a6c5; }
 
@@ -789,14 +820,14 @@ th {
     color: white; }
   .benefitfocus-media p {
     color: white; }
-  .benefitfocus-media a {
+  .benefitfocus-media .btn-holder a {
     color: white;
     background: #0077c8;
     border: none; }
-    .benefitfocus-media a:visited {
+    .benefitfocus-media .btn-holder a:visited {
       color: white;
       background: #0077c8; }
-    .benefitfocus-media a:hover {
+    .benefitfocus-media .btn-holder a:hover {
       background: #005995;
       border: #005995; }
 
@@ -807,11 +838,9 @@ th {
   .kate-mcdonald p {
     color: white; }
     .kate-mcdonald p a {
-      color: #845f20;
-      background: transparent; }
-    .kate-mcdonald p a:hover {
-      text-decoration: none;
-      border-bottom: 4px solid #845f20; }
+      color: #ad7d2a; }
+      .kate-mcdonald p a:hover {
+        text-decoration: underline; }
   .kate-mcdonald .btn-holder a {
     color: white;
     background: #ad7d2a;
@@ -822,13 +851,84 @@ th {
     .kate-mcdonald .btn-holder a:hover {
       background: #845f20; }
 
+.commish {
+  background: #42bbee; }
+  .commish h2 {
+    color: white; }
+  .commish p {
+    color: white; }
+  .commish a {
+    color: white;
+    background: #828282;
+    border: none; }
+    .commish a:visited {
+      color: white;
+      background: #828282; }
+    .commish a:hover {
+      background: #424242; }
+
+.sendsay {
+  background: #b53b3b; }
+  .sendsay h2 {
+    color: white; }
+  .sendsay p {
+    color: white; }
+  .sendsay .btn-holder a {
+    color: white;
+    background: #8f2e2e;
+    border: none; }
+    .sendsay .btn-holder a:visited {
+      color: white;
+      background: #8f2e2e; }
+    .sendsay .btn-holder a:hover {
+      background: #421515;
+      border: #421515; }
+
+.stage {
+  background: #4298b5; }
+  .stage h2 {
+    color: white; }
+  .stage p {
+    color: white; }
+  .stage .btn-holder a {
+    color: white;
+    background: #2d2d2d;
+    border: none; }
+    .stage .btn-holder a:visited {
+      color: white;
+      background: #2d2d2d; }
+    .stage .btn-holder a:hover {
+      background: #141414;
+      border: #141414; }
+
+.powell-peralta {
+  background: #FFD94C; }
+  .powell-peralta h2 {
+    color: white; }
+  .powell-peralta p {
+    color: white; }
+    .powell-peralta p a {
+      color: #e5b400; }
+      .powell-peralta p a:hover {
+        text-decoration: underline; }
+  .powell-peralta .btn-holder a {
+    color: white;
+    background: #e5b400;
+    border: none; }
+    .powell-peralta .btn-holder a:visited {
+      color: white;
+      background: #e5b400; }
+    .powell-peralta .btn-holder a:hover {
+      background: #cca000; }
+
 /* Cloud Animation Styles */
 #clouds {
   padding: 100px 0 0 0;
   background: #c9dbe9;
   background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
   background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%); }
+  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  overflow: hidden; }
   #clouds .cloud {
     width: 200px;
     height: 60px;
@@ -941,9 +1041,9 @@ a {
     color: #1a4967;
     text-decoration: none; }
 
-.btn-animated, .main-header a {
+.btn-animated, .main-header li.nav__item a {
   position: relative; }
-  .btn-animated:before, .main-header a:before {
+  .btn-animated:before, .main-header li.nav__item a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -956,7 +1056,7 @@ a {
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s; }
-  .btn-animated:hover:before, .main-header a:hover:before {
+  .btn-animated:hover:before, .main-header li.nav__item a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(0.5);
     transform: scaleX(0.5); }
