@@ -3,7 +3,58 @@
  * Header and Nav Styles
  */
 
+ /* Main header styles */
+
+.main-header {
+ 	width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+
+
+    .site-logo {
+    	margin-left: 20px;
+
+    	img {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+
+ 	nav {
+ 		display: block;
+ 		float: right;
+ 		padding: 12px 0;
+ 	}
+
+ 	ul {
+ 		list-style-type: none;
+ 		margin: 0;
+ 		padding: 0;
+
+ 		li {
+ 			display: inline-block;
+ 			padding: 0 20px;
+ 			vertical-align: middle;
+ 		}
+ 	}
+
+ 	.header-container {
+ 		max-width: 970px;
+ 		margin: 0 auto;
+ 	}
+ }
+
+
+
 /* Responsive Nav Styles */
+
 html.noScroll {
 	overflow-y: hidden;
 }
@@ -77,54 +128,6 @@ html.noScroll {
 	}
 }
 
-
-/* Main header styles */
-
-.main-header {
- 	width: 100%;
-    padding: 40px 0;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-
-
-    .site-logo {
-    	padding-left: 20px;
-
-    	img {
-    		width: 50px;
-    		height: 50px;
-    	}
-    }
-
- 	nav {
- 		display: block;
- 		float: right;
- 		padding: 12px 0;
- 	}
-
- 	ul {
- 		list-style-type: none;
- 		margin: 0;
- 		padding: 0;
-
- 		li {
- 			display: inline-block;
- 			padding: 0 20px;
- 			vertical-align: middle;
- 		}
- 	}
-
- 	.header-container {
- 		max-width: 970px;
- 		margin: 0 auto;
- 	}
- }
 
 /*  Special State Nav Classes */
 
@@ -216,3 +219,46 @@ header.main-header--hidden {
 		}
 	}
 }
+
+
+/* Site logo animation */
+.main-header .site-logo {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: inline-block;
+
+	img {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.logo-frame {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		border-radius: 100px;
+		border: 0px solid #79b0cc;
+		-webkit-transform: scale(.85, .85);
+		transform: scale(.85, .85);
+		-webkit-transition: all 0.3s cubic-bezier(0.51, 0.2, 0.29, 2.07);
+		transition: all 0.3s cubic-bezier(0.51, 0.2, 0.29, 2.07);
+	}
+
+	.logo-frame:hover {
+		transform: scale(1, 1);
+		border: 3px solid #79b0cc;
+	}
+}
+
+
+
+
