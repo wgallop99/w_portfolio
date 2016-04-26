@@ -56,3 +56,18 @@
 		}
 	}
 }
+
+@include breakpoint("small") {
+
+  .main-footer {
+  	text-align: center;
+
+  	.social, .copyright {
+  		width: 100%;
+  		display: block;
+  		margin: 20px 0;
+  		float: none;
+  	}
+  }
+
+}

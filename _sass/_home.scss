@@ -137,6 +137,16 @@
 	}
 }
 
+@include breakpoint("small") {
+
+  .container .skills .col {
+    width: 100%;
+    display: block;
+    float: none;
+    margin: 40px 0;
+  }
+
+}
 
 .skills {
   background: $brand-color;
