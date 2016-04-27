@@ -241,12 +241,12 @@ header.main-header--hidden {
 		position: absolute;
 		left: 0;
 		top: 0;
-		z-index: 0;
+		z-index: 9;
 		width: 100%;
 		height: 100%;
 		box-sizing: border-box;
 		border-radius: 100px;
-		border: 0px solid #79b0cc;
+		border: 0px solid $brand-color;
 		-webkit-transform: scale(.85, .85);
 		transform: scale(.85, .85);
 		-webkit-transition: all 0.3s cubic-bezier(0.51, 0.2, 0.29, 2.07);
@@ -255,7 +255,7 @@ header.main-header--hidden {
 
 	.logo-frame:hover {
 		transform: scale(1, 1);
-		border: 3px solid #79b0cc;
+		border: 3px solid $brand-color;
 	}
 }
 
