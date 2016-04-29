@@ -836,7 +836,15 @@ th {
   padding: 10px 0; }
 .projects .featured-project-description .btn-holder {
   padding: 20px 0; }
+.projects .featured-project-description .btn-primary:nth-child(2) {
+  margin-left: 10px; }
 
+@media (max-width: 768px) {
+  .projects .featured-project-description a.btn-primary {
+    display: block; }
+
+  .projects .featured-project-description .btn-primary:nth-child(2) {
+    margin: 20px 0 0 0; } }
 .benefitfocus {
   background: #0077c8; }
   .benefitfocus h2 {

@@ -25,7 +25,22 @@
 
 		.btn-holder {
 			padding: 20px 0;
-		}	
+		}
+
+		.btn-primary:nth-child(2) {
+			margin-left: 10px;
+		}
+	}
+}
+
+@include breakpoint("small") {
+	
+	.projects .featured-project-description a.btn-primary {
+		display: block;
+	}
+
+	.projects .featured-project-description .btn-primary:nth-child(2) {
+		margin: 20px 0 0 0;
 	}
 }
 
