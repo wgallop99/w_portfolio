@@ -13,7 +13,9 @@
         <li {% if location == "" %} class="nav__item--current" {% else %} class="nav__item" {% endif %}>
            <a href="/">Home</a>
         </li>
-      {% for page in site.pages %}
+      {% assign sorted_pages = site.pages | sort:"order" %}
+
+      {% for page in sorted_pages %}
         
         <!-- Compare the page title to the URL -->
         {% assign current = page.title | downcase %}

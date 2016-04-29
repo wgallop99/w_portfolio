@@ -13,6 +13,20 @@
 
 	.post {
 		list-style-type: none;
+
+		h2 {
+			text-decoration: underline;
+		}
+
+		p {
+			padding: 0 0 5px 0;
+			color: black;
+		}
+
+		.post__tags {
+			font-size: 12px;
+			color: $lipstick;
+		}
 	}
 
 	.post__item {
@@ -34,6 +48,10 @@
 
 .single-post {
 
+	.post__title--grouped {
+		margin: 0;
+	}
+
 	.row {
 		max-width: 700px;
 	}
@@ -43,12 +61,21 @@
 	}
 
 	.post__meta {
-		padding: 0 0 20px 0;
+		padding: 0 0 40px 0;
 		border-bottom: $border;
+	}
+
+	.post__author {
+		color: $lipstick;
+		font-size: 12px;
 	}
 
 	article {
 		padding-top: 20px;
+
+		p {
+			color: black;
+		}
 	}
 
 	.comment {
