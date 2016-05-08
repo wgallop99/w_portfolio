@@ -68,11 +68,14 @@
     float: right;
     text-align: left;
       
-      h1, 
-      p {
-        color: white;
-      }
+    h1, 
+    p {
+      color: white;
+    }
 
+    p {
+      font-size: 20px;
+    }
   }
 }
 
@@ -87,7 +90,7 @@
 	a {
 		font-size: 4em;
 		cursor: pointer;
-		padding: 5px;
+		padding: 20px;
 		border: 5px solid transparent;
 		border-radius: 100%;
     color: white;
