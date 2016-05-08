@@ -3,7 +3,7 @@
 		'use strict';
 
 		// arrow scroll to event animation
-		var downArrow = document.querySelector(".fa-angle-double-down");
+		var downArrow = document.querySelector("#down-arrow");
 
 		if(downArrow){
 			downArrow.addEventListener("click", function(e){
