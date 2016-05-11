@@ -3,14 +3,13 @@
 
 .hero-intro {
 	height: 100vh;
-	// background: lighten($brand-color, 40%);
-  background: linear-gradient( to top right, $brand-color, rgba(255, 255, 255, 0.5)), url('../img/office_bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+	background: linear-gradient( to top right, $brand-color, rgba(255, 255, 255, 0.5)), url('../img/office_bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 	position: relative;
 
-  width: 100%;
-  display: table;
+	width: 100%;
+	display: table;
 
   .hero-intro__center {
     text-align: center;
@@ -67,6 +66,7 @@
     width: 50%;
     float: right;
     text-align: left;
+    margin: 40px 0;
       
     h1, 
     p {
@@ -77,6 +77,35 @@
       font-size: 20px;
     }
   }
+}
+
+@include breakpoint("small") {
+
+	.hero-intro {
+		background: $brand-color-light;
+		height: auto;
+
+		.hero-avatar {
+			display: block;
+			width: 100%;
+		}
+
+		.hero-content {
+			width: 100%;
+			text-align: center;
+			float: none;
+
+			h1, 
+			p {
+				color: $brand-color;
+				display: block;
+			}
+		}
+	}
+
+	.container .seperator-img {
+		display: none;
+	}
 }
 
 // Arrow Styles
@@ -110,21 +139,10 @@
 
 .seperator-img {
   height: 50vh;
-  background: url('../img/blueridge.jpg') no-repeat;
+  background: linear-gradient( to top right, $brand-color, rgba(255, 255, 255, 0.5)), url('../img/office_bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to top right,  $brand-color, rgba(255, 255, 255, 0.5));
-    opacity: .8; 
-  }
 }
 
 ////////////////////////////////////////////////////
@@ -132,30 +150,40 @@
 
 .about {
 
-  img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    border: 3px solid $lipstick;
-    margin: 0 auto 40px auto;
-  }
+	img {
+		display: block;
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+		border: 3px solid $lipstick;
+		margin: 0 auto 40px auto;
+	}
 
 	p {
 		font-size: 20px;
 		line-height: 2;
+		margin-bottom: 20px;
+		text-indent: 20px;
+	}
+
+	.btn-holder {
+		text-align: center;
+		margin-top: 40px;
 	}
 }
 
 @include breakpoint("small") {
 
-  .container .skills .col {
-    width: 100%;
-    display: block;
-    float: none;
-    margin: 40px 0;
-  }
+	.container .skills .col {
+		width: 100%;
+		display: block;
+		float: none;
+		margin: 40px 0;
+	}
 
+	.about .btn-holder a {
+		display: block;
+	}
 }
 
 .skills {

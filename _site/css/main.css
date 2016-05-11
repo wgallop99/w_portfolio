@@ -693,13 +693,32 @@ th {
     display: inline-block;
     width: 50%;
     float: right;
-    text-align: left; }
+    text-align: left;
+    margin: 40px 0; }
     .hero-intro .hero-content h1,
     .hero-intro .hero-content p {
       color: white; }
     .hero-intro .hero-content p {
       font-size: 20px; }
 
+@media (max-width: 768px) {
+  .hero-intro {
+    background: #d7eaf5;
+    height: auto; }
+    .hero-intro .hero-avatar {
+      display: block;
+      width: 100%; }
+    .hero-intro .hero-content {
+      width: 100%;
+      text-align: center;
+      float: none; }
+      .hero-intro .hero-content h1,
+      .hero-intro .hero-content p {
+        color: #3492CC;
+        display: block; }
+
+  .container .seperator-img {
+    display: none; } }
 .scroll-arrow {
   text-align: center;
   position: absolute;
@@ -721,19 +740,10 @@ th {
 
 .seperator-img {
   height: 50vh;
-  background: url("../img/blueridge.jpg") no-repeat;
+  background: linear-gradient(to top right, #3492CC, rgba(255, 255, 255, 0.5)), url("../img/office_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
-  .seperator-img:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to top right, #3492CC, rgba(255, 255, 255, 0.5));
-    opacity: .8; }
 
 .about img {
   display: block;
@@ -744,14 +754,22 @@ th {
   margin: 0 auto 40px auto; }
 .about p {
   font-size: 20px;
-  line-height: 2; }
+  line-height: 2;
+  margin-bottom: 20px;
+  text-indent: 20px; }
+.about .btn-holder {
+  text-align: center;
+  margin-top: 40px; }
 
 @media (max-width: 768px) {
   .container .skills .col {
     width: 100%;
     display: block;
     float: none;
-    margin: 40px 0; } }
+    margin: 40px 0; }
+
+  .about .btn-holder a {
+    display: block; } }
 .skills {
   background: #3492CC;
   text-align: center;
