@@ -1,0 +1,58 @@
+////////////////////////////////
+// Contact Page Specific Styles
+////////////////////////////////
+
+.url_contact {
+
+	.box {
+		text-align: center;
+		height: 200px;
+    	max-width: 600px;
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		text-align: center;
+		border: 1px solid $brand-color;
+
+		h1 {
+			width: 300px; height: 40px;
+			margin: 0 auto;
+			position: absolute;
+			top: -27px;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+			background-color: white;
+		}
+
+		.social-large {
+			height: 100%;
+			width: 100%;
+			display: table;
+
+			ul {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			display: inline-block;
+			padding: 40px;
+		}
+
+		a {
+			font-size: 40px;
+		}
+	}
+	.extended-footer, .main-footer {
+		display: none;
+	}
+}
