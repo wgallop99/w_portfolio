@@ -4,7 +4,7 @@
 class BodyClassTag < Liquid::Tag
 
 	def generate_body_class(prefix, id)
-		id = id.to_s.sub(/\.\w*?$/, '').to_s.sub(/[-\/]/, '_').to_s.sub(/^_/, '') #Removes extension from url, replace'_ and '/ ' with underscore, Remove leading '_'
+		id = id.to_s.gsub(/\.\w*?$/, '').to_s.gsub(/[-\/]/, '_').to_s.gsub(/^_/, '') #Removes extension from url, replace'_ and '/ ' with underscore, Remove leading '_'
 
 		case prefix
 		when "class"
