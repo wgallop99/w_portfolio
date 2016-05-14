@@ -29,5 +29,5 @@ defaults:
 
 
 # Gems
-gems:  [jekyll-paginate, git-gsub]
+gems:  [jekyll-paginate]
 
