@@ -1251,7 +1251,7 @@ a {
 .single-post .comment {
   background: #d7eaf5; }
 
-.box {
+.url_contact .box {
   text-align: center;
   height: 200px;
   max-width: 600px;
@@ -1263,7 +1263,7 @@ a {
   right: 0;
   text-align: center;
   border: 1px solid #3492CC; }
-  .box h1 {
+  .url_contact .box h1 {
     width: 300px;
     height: 40px;
     margin: 0 auto;
@@ -1274,22 +1274,21 @@ a {
     right: 0;
     z-index: 1;
     background-color: white; }
-  .box .social-large {
+  .url_contact .box .social-large {
     height: 100%;
     width: 100%;
     display: table; }
-    .box .social-large ul {
+    .url_contact .box .social-large ul {
       display: table-cell;
       vertical-align: middle; }
-  .box ul {
+  .url_contact .box ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .box li {
+  .url_contact .box li {
     display: inline-block;
     padding: 40px; }
-  .box a {
+  .url_contact .box a {
     font-size: 40px; }
-
-.extended-footer, .main-footer {
+.url_contact .extended-footer, .url_contact .main-footer {
   display: none; }
