@@ -1292,3 +1292,15 @@ a {
     font-size: 40px; }
 .url_contact .extended-footer, .url_contact .main-footer {
   display: none; }
+
+@media (max-width: 768px) {
+  .url_contact .box {
+    width: 90%; }
+    .url_contact .box h1 {
+      font-size: 1.5em;
+      width: 250px;
+      top: -20px; }
+  .url_contact .social-large li {
+    padding: 20px; }
+  .url_contact .social-large a {
+    font-size: 30px; } }
