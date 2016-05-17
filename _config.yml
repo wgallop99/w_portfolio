@@ -28,7 +28,8 @@ defaults:
 
 
 # Sass conf 
-sass: compressed
+sass: 
+  style: compressed
 
 # Gems
 gems:  [jekyll-paginate]
