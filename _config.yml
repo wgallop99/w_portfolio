@@ -27,6 +27,8 @@ defaults:
       layout: "page"
 
 
+# Sass conf 
+sass: compressed
 
 # Gems
 gems:  [jekyll-paginate]
