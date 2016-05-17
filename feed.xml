@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Will Gallop | Web Developer</title>
+    <description></description>
+    <link>http://willgallop.me/</link>
+    <atom:link href="http://willgallop.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 May 2016 15:03:17 -0400</pubDate>
+    <lastBuildDate>Tue, 17 May 2016 15:03:17 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Camp Sass</title>
+        <description>&lt;p&gt;Camp Sass is a one-day, one-track Sass conference held in Atlanta, GA. It’s hosted by Hampton Catlin, the inventor of Sass!&lt;/p&gt;
+
+&lt;p&gt;At this year’s conference, I had lots of fun, learned a ton, and met many talented web designers and developers.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Apr 2015 05:45:36 -0400</pubDate>
+        <link>http://willgallop.me/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://willgallop.me/welcome-to-jekyll</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>SassConf</title>
+        <description>&lt;p&gt;Aenean viverra rhoncus pede. Aenean vulputate eleifend tellus. Nullam sagittis. Phasellus consectetuer vestibulum elit. Ut a nisl id ante tempus hendrerit.Aenean viverra rhoncus pede. Aenean vulputate eleifend tellus. Nullam sagittis. Phasellus consectetuer vestibulum elit. Ut a nisl id ante tempus hendrerit.&lt;/p&gt;
+
+&lt;p&gt;Sed a libero. Curabitur at lacus ac velit ornare lobortis. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Etiam ut purus mattis mauris sodales aliquam. Curabitur turpis.&lt;/p&gt;
+
+&lt;p&gt;Nulla consequat massa quis enim. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Vivamus quis mi. Cras dapibus. Praesent egestas tristique nibh.&lt;/p&gt;
+
+&lt;p&gt;Vestibulum volutpat pretium libero. Phasellus accumsan cursus velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Vestibulum suscipit nulla quis orci.&lt;/p&gt;
+
+&lt;p&gt;Sed a libero. Curabitur at lacus ac velit ornare lobortis. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Etiam ut purus mattis mauris sodales aliquam. Curabitur turpis.&lt;/p&gt;
+
+&lt;p&gt;Nulla consequat massa quis enim. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Vivamus quis mi. Cras dapibus. Praesent egestas tristique nibh.&lt;/p&gt;
+
+&lt;p&gt;Vestibulum volutpat pretium libero. Phasellus accumsan cursus velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Vestibulum suscipit nulla quis orci.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://willgallop.me/sass-conf</link>
+        <guid isPermaLink="true">http://willgallop.me/sass-conf</guid>
+        
+        <category>Sass</category>
+        
+        <category>CSS</category>
+        
+        <category>Front-end</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Converge</title>
+        <description>&lt;p&gt;Converge assembles some of the best speakers in the industry to inform and inspire you! It’s for the love of the web and the love of our community. This year’s event includes a full schedule of keynotes, sessions, and workshops.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://convergese.com/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://willgallop.me/converge</link>
+        <guid isPermaLink="true">http://willgallop.me/converge</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
